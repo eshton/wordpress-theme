@@ -1,9 +1,9 @@
 /*   
-Theme Name: BLANK Theme
+Theme Name: TwitterPress
 Theme URI: http://digwp.com
-Description: This is just a BLANK starter WordPress Theme template -- WordPress v2.9.1
-Author: Chris Coyier
-Author URI: http://chriscoyier.net
+Description: AgostonFung.Co.Uk Wordpress template
+Author: Agoston Fung
+Author URI: http://agostonfung.co.uk
 Version: 1
 */
 
@@ -15,8 +15,6 @@ body { background: white; font: 14px/1.4 Georgia, Serif; }
 .clear { clear: both; }
 .group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .group, *:first-child+html .group { zoom: 1; } /* First selector = IE6, Second Selector = IE 7 */
-
-#page-wrap { width: 960px; margin: 20px auto; }
 
 h1, h2, h3 { font-weight: normal; margin: 0 0 10px 0; }
 h1 { }

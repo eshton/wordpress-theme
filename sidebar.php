@@ -1,55 +1,30 @@
-  <div class="sidebar">
+<div class="sidebar">
+    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
     <div class="well">
-      <h5>Sidebar</h5>
-      <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-      <h5>Sidebar</h5>
-      <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-      <h5>Sidebar</h5>
-      <ul>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-    </div>
-  </div>
-<?php /*
-<div id="sidebar">
-    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>   
-        <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
-    	<?php get_search_form(); ?>
-    	<?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
-    	<h2>Archives</h2>
-    	<ul>
-            <?php wp_get_archives('type=monthly'); ?>
-    	</ul>
-        <h2>Categories</h2>
+        <?php get_search_form(); ?>
+        <h5>Pages</h5>
+    	<?php wp_list_pages(); ?>
+        <h5>Meta</h5>
         <ul>
-    	   <?php wp_list_categories('show_count=1&title_li='); ?>
-        </ul>        
-    	<?php wp_list_bookmarks(); ?>
-    	<h2>Meta</h2>
-    	<ul>
             <?php wp_register(); ?>
             <li><?php wp_loginout(); ?></li>
             <li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress</a></li>
             <?php wp_meta(); ?>
-    	</ul>
-    	<h2>Subscribe</h2>
-    	<ul>
+        </ul>
+        <h5>Categories</h5>
+        <ul>
+          <?php wp_list_categories('show_count=1&title_li='); ?>
+        </ul>
+        <h5>Subscribe</h5>
+        <ul>
             <li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
             <li><a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a></li>
+        </ul>
+        <?php wp_list_bookmarks(); ?>
+    	<h5>Archives</h5>
+    	<ul>
+            <?php wp_get_archives('type=monthly'); ?>
     	</ul>
+    </div>
     <?php endif; ?>
 </div>
-*/ ?>

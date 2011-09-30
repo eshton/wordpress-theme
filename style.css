@@ -48,9 +48,10 @@ code, tt { }
    .next-posts { }
    .prev-posts { }
 
-#searchform { }
-	#s { }
-	#searchsubmt { }
+#searchform {}
+#searchform #s { width: 165px; }
+#s { }
+#searchsubmt { }
 	
 ol.commentlist { list-style: none; }
 ol.commentlist li { }

@@ -50,15 +50,12 @@
     <div class="container-fluid">
         <?php get_sidebar(); ?>
         <div class="content">
-        <!-- Main hero unit for a primary marketing message or call to action -->
-        <div class="hero-unit">
-<div class="container-fluid">
-    <div class="sidebar">
-<img src="<?php bloginfo('template_directory') ?>/images/agostonfung.jpg"/>
-    </div>
-    <div class="content">
-      <h1>Hello, world!</h1>
-      <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-      <p><a class="btn primary large">Learn more &raquo;</a></p>
-    </div>
-  </div>
+            <div class="hero-unit">
+                <div style="float:left;margin-right:35px;">
+                    <img alt="" src="<?php bloginfo('template_directory') ?>/images/agostonfung.jpg"/>
+                </div>
+                      <h1>Hello, world!</h1>
+                      <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                      <p><a class="btn primary large">Learn more &raquo;</a></p>
+
+            </div>

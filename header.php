@@ -25,14 +25,17 @@
              echo ' - page '. $paged; }
        ?>
     </title>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+    <link rel="shortcut icon" href="/favicon-psy.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/style.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/bootstrap-responsive.min.css" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/extra.css" type="text/css" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <?php /*
     <div class="topbar" style="position:relative;margin-bottom:15px;">
       <div class="topbar-inner">
         <div class="container-fluid">
@@ -47,15 +50,22 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-        <?php get_sidebar(); ?>
-        <div class="content">
-            <div class="hero-unit">
+     *
+     */
+    ?>
+    <div class="container blogContainer">
+        <div class="row">
+            <div class="span3">
+                <?php get_sidebar(); ?>
+            </div>
+            <div class="span9">
+            <div class="hero-unit well" id="frontHeaderUnit">
                 <div style="float:left;margin-right:35px;">
-                    <img alt="" src="<?php bloginfo('template_directory') ?>/images/agostonfung.jpg"/>
+                    <img id="frontImage" alt="" src="<?php bloginfo('template_directory') ?>/images/agostonfung2.jpg"/>
                 </div>
-                      <h1>Hello, world!</h1>
-                      <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                      <p><a class="btn primary large">Learn more &raquo;</a></p>
+                      <h1>Hi!</h1>
+                      <p>My name is Agoston Fung and I am a software engineer living in London, UK.</p>
+                      <p>This is my blog where I share my thoughts with you.</p>
+                      <p><a href="/about-me" class="btn primary large">More about me &raquo;</a></p>
 
             </div>

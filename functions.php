@@ -30,4 +30,19 @@
     	));
     }
 
+    /* Enable script tag */
+    function fb_change_mce_options($initArray) {
+        $ext = 'script[charset|defer|language|src|type]';
+
+        if ( isset( $initArray['extended_valid_elements'] ) ) {
+            $initArray['extended_valid_elements'] .= ',' . $ext;
+        } else {
+            $initArray['extended_valid_elements'] = $ext;
+        }
+
+        return $initArray;
+    }
+    add_filter('tiny_mce_before_init', 'fb_change_mce_options');
+
+
 ?>
